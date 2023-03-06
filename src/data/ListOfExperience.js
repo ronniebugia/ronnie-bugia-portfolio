@@ -45,7 +45,7 @@ export const ListOfExperience = [
         "role": "Software Engineer",
         "location": "Vancouver, BC",
         "startDate": "Aug 2019",
-        "endDate": "April 2020",
+        "endDate": "April 2021",
         "description": [
             "Led a team of 3 other developers on the creation of grubgrab.ca.",
             "Created UI/UX elements using HTML, CSS and JavaScript and used the Stripe API to implement payment functions.",
