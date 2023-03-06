@@ -1,0 +1,126 @@
+.cover-container {
+    max-width: 42em;
+}
+
+.landing-wrapper {
+    height: 768px;
+}
+
+.landing-header {
+    position: relative;
+    overflow: hidden;
+    height: 768px;
+}
+
+.nav-container {
+    position: absolute !important;
+    padding: 10px !important;
+    top: 0;
+    left: 0;
+    width: 100%;
+    color: white !important;
+    z-index: 100;
+}
+
+.hero-section {
+    position: absolute;
+    top: 50%;
+    left: 10%;
+    transform: translateY(-70%);
+}
+
+.bg-skyline {
+    background-image: url('../images/toronto_skyline.jpg');
+    background-color: #cccccc;
+    background-position: center; /* Center the image */
+    background-repeat: no-repeat; /* Do not repeat the image */
+    background-size: cover; /* Resize the background image to cover the entire container */
+    height: 100%;
+}
+
+.about-header {
+    position: relative;
+    overflow: hidden;
+    min-height: 65rem;
+}
+
+.font-Gloock {
+    font-family: 'Gloock', serif !important;
+}
+
+.font-open-sans {
+    font-family: 'Open Sans', sans-serif !important;
+}
+
+.font-roboto {
+    font-family: 'Roboto Mono', monospace !important;
+}
+
+.text-blue {
+    color: #4472C4;
+}
+
+.card-blue-gradient {
+    background: linear-gradient(135deg, hsla(218, 52%, 52%, 1) 10%, hsla(230, 50%, 88%, 1) 100%);
+}
+
+.bg-dark {
+    background-color: #E6E6EA !important;
+    color: black !important;
+}
+
+.experience-img {
+    max-width: 250px;
+}
+
+.experience-card {
+    margin: 48px auto !important;
+    width: 80% !important;
+    padding: 48px;
+}
+
+.experience-card p, ul {
+    margin: 0;
+}
+
+.about-link-wrapper {
+    margin: 48px auto;
+}
+
+@media only screen and (max-width: 600px) {
+    .hero-section {
+        top: 60%;
+        padding: 25px;
+        left: 0%;
+    }
+
+    .hero-section p {
+        font-size: 12px;
+    }
+
+    .padding-for-mobile {
+        padding: 90px 25px
+    }
+
+    .experience-card {
+        width: 100% !important;
+        padding: 25px;
+    }
+
+    .experience-img {
+        max-width: 150px;
+        margin: 20px auto;
+    }
+
+    .experience-card p {
+        font-size: 12px;
+    }
+
+    .about-link-wrapper {
+        padding: 25px;
+    }
+
+    .about-link-div {
+        width: 33% !important;
+    }
+}

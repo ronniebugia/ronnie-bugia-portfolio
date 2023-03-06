@@ -1,23 +1,35 @@
-import logo from './logo.svg';
 import './App.css';
+import './css/Landing.css';
+import './css/Experience.css';
+
+import Landing from './components/Landing';
+import Navbar from './components/Navbar';
+import About from './components/About';
+import Experience from './components/Experience';
+import { ListOfExperience } from './data/ListOfExperience';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div>
+      <Navbar />
+      <Landing />
+      <About />
+      <div id="experience" className='bg-dark p-md-5 padding-for-mobile'>
+        <div className='p-lg-5'>
+          <h1 className='text-bg-dark'><b>Experience -</b></h1>
+          {ListOfExperience.map(experience => (
+            <Experience
+              title={experience.title}
+              role={experience.role}
+              location={experience.location}
+              startDate={experience.startDate}
+              endDate={experience.endDate}
+              description={experience.description}
+              logo={experience.logo}
+            />
+          ))}
+        </div>
+      </div>
     </div>
   );
 }
