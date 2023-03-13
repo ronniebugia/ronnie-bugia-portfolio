@@ -42,7 +42,7 @@ export const ListOfExperience = [
     },
     {
         "title": "Grubgrab",
-        "role": "Software Engineer",
+        "role": "Head of Technology & Software Engineer",
         "location": "Vancouver, BC",
         "startDate": "Aug 2019",
         "endDate": "April 2021",
