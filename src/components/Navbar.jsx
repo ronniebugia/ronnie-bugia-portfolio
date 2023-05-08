@@ -1,27 +1,42 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { BsLinkedin, BsGithub } from 'react-icons/bs';
 
-const Navbar = () => {
+import { GitHubLink, ResumeLink, LinkedInLink } from '../data/Links';
+
+function Navbar() {
+
+    const [showNavbar, setShowNavbar] = useState(false);
+
+    const toggleNavbar = () => setShowNavbar(!showNavbar);
 
     return (
-        <nav class="nav-container navbar navbar-expand-lg navbar-dark text-bg-dark">
-            <ul class="navbar-nav mr-auto">
-                <li class="nav-item">
-                    <a class="nav-link" href="#about">About</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#experience">Experience</a>
-                </li>
-                <li class="nav-item">
-                    <a className='nav-link' href='https://drive.google.com/file/d/1hpkvZj5JkX4hHMMgssMVyCtUL7njI5h_/view?usp=sharing'>Resume</a>
-                </li>
-                <li class="nav-item">
-                    <a className='nav-link' href='https://www.linkedin.com/in/ronnie-bugia/'><BsLinkedin /></a>
-                </li>
-                <li class="nav-item">
-                    <a className='nav-link' href='https://github.com/ronniebugia'><BsGithub /></a>
-                </li>
-            </ul>
+        <nav className="nav-container navbar navbar-expand-lg navbar-dark text-bg-dark">
+
+            <button class="navbar-toggler" type="button" onClick={toggleNavbar}>
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div className={`collapse navbar-collapse ${showNavbar ? 'show' : ''}`}>
+                <ul className="navbar-nav mr-auto fade-in">
+                    <li className="nav-item">
+                        <a className="nav-link" href="#about">About</a>
+                    </li>
+                    <li className="nav-item">
+                        <a className="nav-link" href="#skills">Skills</a>
+                    </li>
+                    <li className="nav-item">
+                        <a className="nav-link" href="#experience">Experience</a>
+                    </li>
+                    <li className="nav-item">
+                        <a className='nav-link' href={ResumeLink}>Resume</a>
+                    </li>
+                    <li className="nav-item">
+                        <a className='nav-link' href={LinkedInLink}><BsLinkedin /></a>
+                    </li>
+                    <li className="nav-item">
+                        <a className='nav-link' href={GitHubLink}><BsGithub /></a>
+                    </li>
+                </ul>
+            </div>
         </nav>
     )
 

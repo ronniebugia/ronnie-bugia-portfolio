@@ -5,7 +5,7 @@ const Landing = () => {
     return (
         <div className='landing-header text-bg-dark'>
             <div className='hero-section'>
-                <main className='col-md-12'>
+                <main className='col-md-12 fade-in-long'>
                     <p>Hello Friend!</p>
                     <h1><b>Ronnie Bugia</b></h1>
                     <h2 className='text-blue'><b>Software Developer</b></h2>

@@ -1,11 +1,12 @@
 import React from 'react';
 import { BsLinkedin, BsGithub } from 'react-icons/bs';
 import { IoMdDocument } from 'react-icons/io';
+import { GitHubLink, ResumeLink, LinkedInLink } from '../data/Links';
 
 const About = () => {
 
     return (
-        <div id="about" className='p-md-5 padding-for-mobile'>
+        <div id="about" className='tag p-md-5 padding-for-mobile about'>
             <div className='p-lg-5'>
                 <h1><b>Welcome to my Desk! -</b></h1>
                 <p>
@@ -17,13 +18,13 @@ const About = () => {
             </div>
             <div className='row font-open-sans about-link-wrapper'>
                 <div className='col-md-4 text-center about-link-div'>
-                    <a className='about-link' href='https://www.linkedin.com/in/ronnie-bugia/'><BsLinkedin size={70} /></a>
+                    <a className='about-link' href={LinkedInLink}><BsLinkedin size={70} /></a>
                 </div>
                 <div className='col-md-4 text-center about-link-div'>
-                    <a className='about-link' href='https://github.com/ronniebugia'><BsGithub size={70} /></a>
+                    <a className='about-link' href={GitHubLink}><BsGithub size={70} /></a>
                 </div>
                 <div className='col-md-4 text-center about-link-div'>
-                    <a className='about-link' href='https://drive.google.com/file/d/1hpkvZj5JkX4hHMMgssMVyCtUL7njI5h_/view?usp=sharing'>
+                    <a className='about-link' href={ResumeLink}>
                         <IoMdDocument size={70} />
                     </a>
                 </div>

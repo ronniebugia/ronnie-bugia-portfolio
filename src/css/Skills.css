@@ -1,0 +1,13 @@
+.skills-container h2 {
+    font-size: 1.5rem;
+}
+
+.skills-container h2 b {
+    color: #4472C4;
+}
+
+@media only screen and (max-width: 600px) {
+    .skills-container h2 {
+        font-size: 1rem;
+    }
+}

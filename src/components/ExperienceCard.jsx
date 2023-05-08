@@ -1,10 +1,10 @@
 import React from 'react';
 import getImageByKey from '../images/images';
 
-const Experience = (props) => {
+const ExperienceCard = (props) => {
 
     return (
-        <div className='row bg-light experience-card'>
+        <div className={`row bg-light experience-card`}>
             <div className='col-md-6 experience-image-col'>
                 <img 
                     className='experience-img'
@@ -15,8 +15,8 @@ const Experience = (props) => {
             <div className='col-md-6'>
                 <p><b>{props.role}</b></p>
                 <ul>
-                    {props.description.map(bulletPoint => (
-                        <li>{bulletPoint}</li>
+                    {props.description.map((bulletPoint, index) => (
+                        <li key={index}>{bulletPoint}</li>
                     ))}
                 </ul>
                 <p><b>{props.location}</b></p>
@@ -27,4 +27,4 @@ const Experience = (props) => {
 
 }
 
-export default Experience;
+export default ExperienceCard;
