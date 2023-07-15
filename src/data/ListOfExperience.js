@@ -16,7 +16,7 @@ export const ListOfExperience = [
     },
     {
         "title": "Publicis Sapient",
-        "role": "Junior Associate Software Development Engineer",
+        "role": "Junior Software Development Engineer",
         "location": "Toronto, ON",
         "startDate": "July 2021",
         "endDate": "June 2022",
